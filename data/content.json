@@ -1,0 +1,187 @@
+{
+  "hero": {
+    "title": "Create Your Spooky Halloween Park",
+    "description": "Are you ready to run your own Halloween park? My Halloween Park is a 3D simulation game that lets you create a spooky and fun amusement park for visitors. You can collect ghosts and load them into the haunted house, where visitors will pay you to enter and experience the horror.",
+    "buttonText": "Play Now"
+  },
+  "sections": {
+    "features": "Game Features",
+    "game": "Play My Halloween Park",
+    "howToPlay": "How to Play",
+    "attractions": "Explore Spooky Attractions",
+    "attractionsDescription": "Experience various haunted environments from ghost-filled mansions to pumpkin gardens and candy shops.",
+    "reviews": "Player Reviews",
+    "halloweenSpirit": "Embrace the Halloween Spirit",
+    "halloweenSpiritText": "My Halloween Park captures the essence of Halloween with its spooky atmosphere, ghostly inhabitants, and festive attractions. From collecting spirits to managing haunted houses, every aspect of the game immerses you in the magical world of Halloween.",
+    "halloweenSpiritText2": "Create the most terrifying and profitable Halloween park while maintaining the perfect balance between scares and fun. Your visitors will love the unique experience you provide!",
+    "news": {
+      "updates": "Game Updates",
+      "diaries": "Ghost Diaries"
+    },
+    "contact": {
+      "form": "Send us a Message",
+      "map": "Find Us"
+    }
+  },
+  "features": [
+    {
+      "icon": "👻",
+      "title": "Ghost Collection",
+      "description": "Collect various types of ghosts and spirits to populate your haunted attractions and create the ultimate spooky experience."
+    },
+    {
+      "icon": "🎃",
+      "title": "Pumpkin Patches",
+      "description": "Grow and harvest pumpkins to decorate your park and create seasonal attractions that visitors love."
+    },
+    {
+      "icon": "🍬",
+      "title": "Candy Shops",
+      "description": "Build and manage candy shops to satisfy your visitors' sweet tooth and increase park revenue."
+    },
+    {
+      "icon": "🚂",
+      "title": "Ghost Trains",
+      "description": "Operate thrilling ghost trains that take visitors on spooky rides through your haunted park."
+    },
+    {
+      "icon": "🏰",
+      "title": "Haunted Houses",
+      "description": "Design and upgrade haunted houses where visitors pay to experience spine-chilling horror attractions."
+    },
+    {
+      "icon": "🌙",
+      "title": "Night Management",
+      "description": "Manage your park during the mysterious night hours when the supernatural activity is at its peak."
+    }
+  ],
+  "howToPlay": [
+    {
+      "title": "Getting Started",
+      "description": "Learn the basics of running your Halloween park and attracting your first visitors.",
+      "steps": [
+        "Start by building basic attractions like pumpkin patches",
+        "Collect ghosts and place them in haunted houses",
+        "Manage your park's finances and upgrade facilities",
+        "Expand your ghost-carrying capacity for more spirits"
+      ]
+    },
+    {
+      "title": "Park Management",
+      "description": "Master the art of park management to maximize profits and visitor satisfaction.",
+      "steps": [
+        "Balance attraction placement for optimal visitor flow",
+        "Upgrade facilities to increase capacity and revenue",
+        "Invest in new attractions to keep visitors entertained",
+        "Monitor visitor satisfaction and adjust accordingly"
+      ]
+    },
+    {
+      "title": "Advanced Strategies",
+      "description": "Advanced techniques to create the most profitable and spooky Halloween park.",
+      "steps": [
+        "Create themed areas with coordinated attractions",
+        "Time your upgrades with seasonal events",
+        "Optimize ghost placement for maximum scares",
+        "Develop unique visitor experiences for higher ratings"
+      ]
+    }
+  ],
+  "track": {
+    "features": [
+      {
+        "icon": "👻",
+        "text": "Ghost Collection - Gather spirits from various locations to populate your haunted attractions"
+      },
+      {
+        "icon": "🎃",
+        "text": "Pumpkin Gardens - Grow and harvest pumpkins for decorations and seasonal events"
+      },
+      {
+        "icon": "🏰",
+        "text": "Haunted Mansions - Build terrifying haunted houses that visitors pay to experience"
+      },
+      {
+        "icon": "🍬",
+        "text": "Candy Corn Shops - Satisfy visitors' sweet cravings and boost your park's appeal"
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "name": "Alex Johnson",
+      "text": "Amazing Halloween game! The ghost collection mechanic is incredibly fun and the haunted house management is addictive. I've been playing for hours creating the spookiest park possible!"
+    },
+    {
+      "name": "Sarah Chen",
+      "text": "Perfect for Halloween lovers! The pumpkin patches and candy shops are so cute, and the ghost trains are thrilling. Love how each attraction feels unique with different ghost types."
+    },
+    {
+      "name": "Mike Rodriguez",
+      "text": "Best Halloween park simulator I've played! The 3D graphics are impressive and the management aspects are well-balanced. Highly recommend for anyone who loves spooky themes!"
+    },
+    {
+      "name": "Emma Wilson",
+      "text": "Great game for both casual and hardcore players. The progression system keeps me engaged and the seasonal events add fun strategic elements. Love the ghost-carrying mechanics!"
+    },
+    {
+      "name": "David Kim",
+      "text": "Incredible attention to detail in the haunted attractions. The different ghost types really change how you need to approach each haunted house design."
+    },
+    {
+      "name": "Lisa Thompson",
+      "text": "Addictive gameplay with smooth performance. The park variety keeps things fresh and the Halloween atmosphere is perfectly captured. Excellent spooky fun!"
+    }
+  ],
+  "gameUpdates": [
+    {
+      "title": "New Ghost Types Released",
+      "description": "Experience terrifying new ghost varieties that bring unique scares to your haunted houses. Each ghost type has special abilities and scaring patterns.",
+      "date": "February 15, 2025",
+      "fullContent": "We're excited to announce the release of our new ghost collection system! This major update introduces five new ghost types with unique abilities and scaring patterns. Poltergeists can move objects, Shadow Spirits create darkness effects, Wailing Ghosts produce spine-chilling sounds, Phantom Guards patrol specific areas, and Trickster Spirits play pranks on visitors. Each ghost type affects visitor experience differently, requiring strategic placement in your haunted houses. New ghost-specific missions have also been added to test your ghost management skills.",
+      "image": "picture/hallow_section.jpg"
+    },
+    {
+      "title": "Pumpkin Festival Event",
+      "description": "Celebrate the harvest season with our new Pumpkin Festival event featuring special decorations, limited-time attractions, and exclusive rewards.",
+      "date": "April 22, 2025",
+      "fullContent": "This update introduces our first seasonal event - the Pumpkin Festival! For two weeks, players can participate in special pumpkin-growing challenges, unlock festival-exclusive decorations, and earn unique rewards. The event includes new pumpkin varieties, special lighting effects, and festival-themed attractions that boost visitor satisfaction. Limited-time ghost types that only appear during the festival will also be available. The update also includes performance improvements and bug fixes for smoother gameplay across all devices.",
+      "image": "picture/hallow_section2.jpg"
+    },
+    {
+      "title": "Haunted House Designer Tool",
+      "description": "Introducing a powerful new tool that lets you design custom haunted house layouts with advanced room placement and decoration options.",
+      "date": "February 28, 2025",
+      "fullContent": "We've launched our comprehensive Haunted House Designer tool! This revolutionary feature allows players to create custom haunted house layouts with unprecedented detail. Choose from hundreds of room types, place decorations strategically, and design scare sequences that maximize visitor fright. The tool includes advanced features like scare timing, visitor path optimization, and atmospheric effects. Pre-designed haunted house templates are also available for players who prefer to start with proven layouts. This update also includes new decoration sets and improved ghost AI for more realistic behavior.",
+      "image": "picture/hallow_section3.jpg"
+    }
+  ],
+  "trailDiaries": [
+    {
+      "title": "Behind the Scenes: Ghost Design Process",
+      "description": "Take a look at how we design and create the terrifying ghosts that populate your haunted attractions.",
+      "date": "February 8, 2025",
+      "fullContent": "Creating the ghost characters for My Halloween Park involves a fascinating blend of folklore research and creative design. Our design team studies ghost legends from around the world to create authentic and diverse spirit types. Each ghost goes through multiple design iterations where we balance visual appeal with gameplay mechanics. The Poltergeist design took over two months to perfect, with countless adjustments to its object-moving animations and scare patterns. We also work closely with our sound design team to create unique ghost sounds that enhance the spooky atmosphere. The result is a diverse ghost population that makes each haunted house feel unique and terrifying.",
+      "image": "picture/hallow_section4.jpg"
+    },
+    {
+      "title": "Community Spotlight: Top Park Managers",
+      "description": "Meet some of the most successful park managers in our community and learn their strategies for creating profitable Halloween parks.",
+      "date": "April 15, 2025",
+      "fullContent": "This month we're highlighting three exceptional park managers who have mastered the art of Halloween park management. SpookyMaster has created the most profitable haunted house chain, achieving record visitor numbers and revenue. PumpkinQueen has revolutionized pumpkin patch management, creating the most beautiful and productive gardens in the game. And GhostWhisperer has collected the rarest ghost types and created the most terrifying haunted attractions. We interviewed each player about their management strategies, favorite attractions, and tips for new players. Their insights have been invaluable in helping us understand what makes our game so engaging and how we can continue to improve the player experience.",
+      "image": "picture/hallow_section5.jpg"
+    },
+    {
+      "title": "Development Update: Future Features",
+      "description": "Get a sneak peek at upcoming features and improvements planned for My Halloween Park in the coming months.",
+      "date": "February 20, 2025",
+      "fullContent": "We're excited to share our development roadmap for the next six months! Q1 2025 will bring a comprehensive multiplayer system allowing players to visit and rate each other's parks. We're also working on a seasonal events system with Halloween, Christmas, and other holiday-themed content. Q2 will introduce a story mode with narrative-driven missions and character progression. The story will follow a rookie park manager's journey to becoming a Halloween park legend. We're also planning major visual upgrades including improved lighting systems, particle effects for ghost interactions, and more detailed attraction models. Community feedback has been crucial in shaping these features, and we can't wait to see how players respond to these new additions.",
+      "image": "picture/hallow_new.jpg"
+    }
+  ],
+  "contact": {
+    "email": "connect@domain.com",
+    "phone": "+61 3 9452 1876",
+    "address": "456 George Street, Sydney NSW 2000, Australia"
+  }
+}

@@ -1,0 +1,591 @@
+/* Home Page Styles */
+
+/* Hero Section */
+.hero {
+  min-height: 520px;
+  padding: var(--spacing-4xl) 0 var(--spacing-4xl) 0;
+  display: flex;
+  align-items: center;
+  background: var(--bg-dark) !important;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,215,0,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-shadow: 0 4px 24px rgba(255, 215, 0, 0.3), 0 1px 0 var(--accent-color);
+  background: linear-gradient(
+    90deg,
+    var(--accent-color) 60%,
+    var(--secondary-color) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 0;
+  order: 1;
+}
+
+.hero-description {
+  position: relative;
+  background: rgba(26, 26, 26, 0.8);
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  padding: 1.1rem 2.2rem;
+  display: inline-block;
+  margin-bottom: 0;
+  border: 1px solid var(--accent-color);
+  order: 3;
+}
+
+.hero-btn {
+  font-size: var(--font-size-lg);
+  padding: var(--spacing-md) var(--spacing-xl);
+  min-width: 160px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  order: 2;
+}
+
+.hero-hr {
+  border: none;
+  height: 4px;
+  width: 120px;
+  margin: 0.2rem auto 2rem auto;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 215, 0, 0.3) 0%,
+    rgba(255, 107, 53, 0.6) 100%
+  );
+  opacity: 0.8;
+  order: 4;
+}
+
+/* Hero Section with blurred image background */
+.hero-bg {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-dark) !important;
+}
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../picture/hallow_hiro.jpg") center center/cover no-repeat;
+  filter: blur(8px) brightness(0.5);
+  z-index: 0;
+  opacity: 0.9;
+  /* Маска для розмитих країв */
+  mask-image: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.hero-bg .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Game Section */
+.game-section {
+  padding: var(--spacing-3xl) 0;
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-dark));
+  position: relative;
+}
+
+.game-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 215, 0, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(255, 107, 53, 0.05) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+.game-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--accent-color);
+}
+
+.game-iframe {
+  width: 100%;
+  height: 600px;
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-normal);
+}
+
+.game-iframe:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Features Section */
+.features {
+  padding: var(--spacing-3xl) 0;
+  background: var(--bg-dark) !important;
+  background-color: var(--bg-dark) !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.features *,
+.features *::before,
+.features *::after {
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  color: var(--text-primary);
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.feature-card {
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: transform var(--transition-normal),
+    box-shadow var(--transition-normal);
+  border: 1px solid var(--border-light);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent-color);
+}
+
+.feature-icon {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--spacing-md);
+  filter: drop-shadow(0 0 5px var(--accent-color));
+}
+
+.feature-title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+}
+
+.feature-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* How to Play Section */
+.how-to-play {
+  padding: var(--spacing-3xl) 0;
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-dark));
+}
+
+.how-to-play-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.how-to-play-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.how-to-item {
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+}
+
+.how-to-item:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.how-to-title {
+  color: var(--accent-color);
+  margin-bottom: var(--spacing-md);
+}
+
+.how-to-description {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.how-to-list {
+  list-style: none;
+  padding: 0;
+}
+
+.how-to-list li {
+  margin-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-lg);
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.how-to-list li::before {
+  content: "🎃";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: var(--font-size-sm);
+}
+
+/* Attractions Section (renamed from track) */
+.attractions {
+  padding: var(--spacing-3xl) 0;
+  background: var(--bg-dark);
+}
+
+.attractions-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
+}
+
+.attractions-text {
+  order: 2;
+}
+
+.attractions-title {
+  color: var(--accent-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.attractions-description {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+}
+
+.attractions-description-bg {
+  background: rgba(26, 26, 26, 0.8);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+}
+
+.attractions-features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.attractions-feature {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  border: 1px solid var(--border-light);
+}
+
+.attractions-feature:hover {
+  transform: translateX(5px);
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow-md);
+}
+
+.attractions-feature-icon {
+  font-size: var(--font-size-xl);
+  flex-shrink: 0;
+}
+
+.attractions-feature-text {
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.attractions-visual {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attractions-placeholder {
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--accent-color);
+  max-width: 400px;
+  width: 100%;
+}
+
+.attractions-icon {
+  margin-bottom: var(--spacing-md);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.attractions-placeholder p {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Reviews Section */
+.reviews {
+  padding: var(--spacing-3xl) 0;
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-dark));
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.review-card {
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal),
+    box-shadow var(--transition-normal);
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent-color);
+}
+
+.review-text {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-style: italic;
+  order: 1;
+  margin-bottom: var(--spacing-md);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  order: 2;
+}
+
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--secondary-color)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  color: var(--bg-dark);
+}
+
+.review-info {
+  flex: 1;
+}
+
+.review-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.review-rating {
+  color: var(--accent-color);
+  font-size: var(--font-size-sm);
+}
+
+/* Halloween Spirit Section */
+.halloween-spirit {
+  padding: var(--spacing-3xl) 0;
+  background: var(--bg-dark);
+  position: relative;
+}
+
+.halloween-spirit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 30% 30%,
+      rgba(255, 215, 0, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 70% 70%,
+      rgba(255, 107, 53, 0.05) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+.halloween-spirit-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
+}
+
+.spirit-text {
+  order: 1;
+}
+
+.spirit-text p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-lg);
+}
+
+.spirit-visual {
+  order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spirit-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-description {
+    padding: 1rem 1.5rem;
+  }
+  .game-iframe {
+    height: 400px;
+  }
+  .attractions-content {
+    grid-template-columns: 1fr;
+  }
+  .attractions-text {
+    order: 2;
+  }
+  .attractions-visual {
+    order: 1;
+  }
+  .spirit-text {
+    order: 2;
+  }
+  .spirit-visual {
+    order: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .game-iframe {
+    height: 250px;
+  }
+  .features-grid,
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
