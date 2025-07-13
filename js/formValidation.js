@@ -33,7 +33,7 @@ function validateField(field) {
       if (fieldValue === "") {
         isValid = false;
         errorMessage = "This field is required";
-      } else if (!/^[a-zA-Z\s]+$/.test(fieldValue)) {
+      } else if (!/^[\p{L}\s]+$/u.test(fieldValue)) {
         isValid = false;
         errorMessage = "Please enter only letters and spaces";
       }

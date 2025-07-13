@@ -106,6 +106,7 @@
   border: 2px solid var(--border-light);
   border-radius: var(--radius-md);
   font-size: var(--font-size-base);
+  color: var(--text-white);
   transition: border-color var(--transition-fast),
     box-shadow var(--transition-fast);
   background-color: var(--bg-primary);
@@ -128,6 +129,13 @@
 .form-textarea.success {
   border-color: var(--success-color);
   box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* Placeholder styles */
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
 }
 
 .error-message {
