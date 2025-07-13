@@ -79,4 +79,11 @@ export function initializeMobileMenu() {
       mobileMenuToggle.click();
     }
   });
+
+  // Close menu when clicking a nav-link (mobile)
+  nav.addEventListener("click", function (e) {
+    if (e.target.classList.contains("nav-link") && isMenuOpen) {
+      mobileMenuToggle.click(); // це закриє меню і поверне скрол
+    }
+  });
 }

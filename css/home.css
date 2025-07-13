@@ -31,6 +31,7 @@
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-lg);
+  margin-top: 20px;
 }
 
 .hero-title {
@@ -195,7 +196,7 @@
 .section-title {
   text-align: center;
   margin-bottom: var(--spacing-2xl);
-  color: var(--text-primary);
+  color: var(--text-primary, #ffd700); /* fallback: яскравий жовтий */
   background: linear-gradient(
     135deg,
     var(--accent-color),
@@ -204,6 +205,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.features .section-title {
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  background-clip: initial;
+  color: #ffd700;
+  text-shadow: 0 2px 8px #000;
 }
 
 .features-grid {

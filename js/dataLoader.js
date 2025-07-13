@@ -181,7 +181,7 @@ function loadNewsContent(data) {
   if (updatesGrid && data.gameUpdates) {
     updatesGrid.innerHTML = data.gameUpdates
       .map(
-        (update) => `
+        (update, idx) => `
         <div class="news-card">
           <div class="news-image">
             ${
@@ -195,11 +195,14 @@ function loadNewsContent(data) {
             <h3 class="news-title">${update.title}</h3>
             <p class="news-description">${update.description}</p>
             <div class="news-date">${update.date}</div>
-            <button class="read-more-btn" data-content="${update.fullContent}">
+            <button class="read-more-btn" 
+              data-title="${update.title}"
+              data-content="${update.fullContent}"
+              data-date="${update.date}"
+              data-category="updates">
               Read More
               <span class="read-more-icon">▼</span>
             </button>
-            <div class="news-expanded"></div>
           </div>
         </div>
       `
@@ -211,7 +214,7 @@ function loadNewsContent(data) {
   if (diariesGrid && data.trailDiaries) {
     diariesGrid.innerHTML = data.trailDiaries
       .map(
-        (diary) => `
+        (diary, idx) => `
         <div class="news-card">
           <div class="news-image">
             ${
@@ -225,11 +228,14 @@ function loadNewsContent(data) {
             <h3 class="news-title">${diary.title}</h3>
             <p class="news-description">${diary.description}</p>
             <div class="news-date">${diary.date}</div>
-            <button class="read-more-btn" data-content="${diary.fullContent}">
+            <button class="read-more-btn" 
+              data-title="${diary.title}"
+              data-content="${diary.fullContent}"
+              data-date="${diary.date}"
+              data-category="diaries">
               Read More
               <span class="read-more-icon">▼</span>
             </button>
-            <div class="news-expanded"></div>
           </div>
         </div>
       `

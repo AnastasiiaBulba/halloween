@@ -21,6 +21,16 @@ document.addEventListener("DOMContentLoaded", async function () {
     initializeNewsExpander();
     initializeFormValidation();
 
+    // Плавний скрол до секції, якщо є хеш у URL
+    if (window.location.hash) {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 300); // невелика затримка для коректного рендеру
+      }
+    }
+
     // Set current year in footer
     const currentYearElement = document.getElementById("current-year");
     if (currentYearElement) {
